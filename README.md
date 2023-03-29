@@ -18,12 +18,17 @@
 部门：
     部门Id、部门名称、部门owner、部门负责人、部门描述、上级部门Id、部门位置、网址入口、创建时间、更新时间
 
-dubbo+nacos+springboot+mybatis-plus基础架构
-kong网关
+基础架构
+springboot
+mybatis-plus
+springSecurity+oauth2
+
+dubbo+zookeeper
 redis缓存
 kafka消息中间件，流量削峰
 elasticsearch 搜索引擎 + kibana日志查询
 
+kong网关
 seata分布式事务
 
 prometheus grafana监控系统
@@ -42,7 +47,7 @@ kernel-pigeon       -- 通信模块
 kernel-search       -- 搜索引擎模块
 renren-generator    -- 代码生成器
 
-springsecurity+auth2实现权限模块
-自定义资源注解，权限注解，requestId,
+
+-- 自定义资源注解，权限注解，requestId,
 
 
