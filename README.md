@@ -23,10 +23,11 @@ springboot
 mybatis-plus
 springSecurity+oauth2
 
-dubbo+zookeeper
+dubbo+zookeeper[注册中心+配置中心]
 redis缓存
 kafka消息中间件，流量削峰
-elasticsearch 搜索引擎 + kibana日志查询
+elasticsearch搜索引擎 
+kibana日志查询
 
 kong网关
 seata分布式事务
@@ -35,16 +36,33 @@ prometheus grafana监控系统
 SkyWalking链路追踪
 
 mysql存储数据
-Postgresql+mongodb+clinkHouse+hive+mysql+oracle 调度数据源【后续hbase】
-mapReduce+spark+flink 大数据调度
+
+传输数据源类型
+Postgresql
+hadoop
+spark
+flink
+hive
+
+clinkHouse
+mongodb
+oracle
+hbase
+
 
 
 kernel-admin        -- 后台管理模块
+
 kernel-authority    -- 权限管理模块
+
 kernel-common       -- 公共模块
+
 kernel-engine       -- 数据源管理模块
+
 kernel-pigeon       -- 通信模块
+
 kernel-search       -- 搜索引擎模块
+
 renren-generator    -- 代码生成器
 
 
