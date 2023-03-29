@@ -1,0 +1,14 @@
+server:
+  port: 8088
+
+dubbo:
+  application:
+    name: kernel-pigeon
+  registry:
+    address: nacos://127.0.0.1:8848
+    timeout: 5000
+  protocol:
+    name: dubbo
+    port: 20883
+  scan:
+    base-packages: com.learn.kernel.*.service

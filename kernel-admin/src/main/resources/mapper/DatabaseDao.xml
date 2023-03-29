@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.learn.kernel.admin.dao.DatabaseDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.learn.kernel.admin.entity.DatabaseEntity" id="databaseMap">
+        <result property="id" column="id"/>
+        <result property="databaseName" column="database_name"/>
+        <result property="databaseType" column="database_type"/>
+        <result property="databaseVersion" column="database_version"/>
+        <result property="databaseOwner" column="database_owner"/>
+        <result property="databaseUrl" column="database_url"/>
+        <result property="databasePort" column="database_port"/>
+        <result property="databaseUser" column="database_user"/>
+        <result property="databasePassword" column="database_password"/>
+        <result property="location" column="location"/>
+        <result property="databaseDescribe" column="database_describe"/>
+        <result property="address" column="address"/>
+        <result property="connectPath" column="connect_path"/>
+        <result property="connectType" column="connect_type"/>
+    </resultMap>
+
+
+</mapper>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.learn.kernel.admin.dao.SchedulerTaskDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.learn.kernel.admin.entity.SchedulerTaskEntity" id="schedulerTaskMap">
+        <result property="id" column="id"/>
+        <result property="taskGroupId" column="task_group_id"/>
+        <result property="databaseTargetId" column="database_target_id"/>
+        <result property="databaseSourceId" column="database_source_id"/>
+        <result property="tableTarget" column="table_target"/>
+        <result property="tableSource" column="table_source"/>
+        <result property="createTable" column="create_table"/>
+        <result property="schedulerName" column="scheduler_name"/>
+        <result property="schedulerType" column="scheduler_type"/>
+        <result property="schedulerDescribe" column="scheduler_describe"/>
+        <result property="schedulerStatus" column="scheduler_status"/>
+        <result property="filterCondition" column="filter_condition"/>
+        <result property="executeUser" column="execute_user"/>
+        <result property="coreExecute" column="core_execute"/>
+        <result property="prefixSql" column="prefix_sql"/>
+        <result property="suffixSql" column="suffix_sql"/>
+    </resultMap>
+
+
+</mapper>
